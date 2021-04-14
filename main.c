@@ -5,6 +5,12 @@
 
 int lengthOfPassword = 16;
 
+void usage() {
+    printf(
+            "   -length / -l : takes number following flag and produces password with that length\n"
+            );
+}
+
 int main(int argc, char *argv[]) {
 
     for (unsigned int i = 0; i < argc; i++) {
@@ -18,7 +24,7 @@ int main(int argc, char *argv[]) {
         }
 
         if (strcmp(argv[i], "-help") == 0 || strcmp(argv[i], "-h") == 0) {
-            printf("-length / -l : takes number following flag and produces password with that length");
+            usage();
         }
     }
 
