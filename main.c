@@ -8,7 +8,7 @@ int lengthOfPassword = 16;
 int numbersAndLetters = 0;
 
 
-void usage() {
+static void usage() {
     printf(
             "   -length / -l : takes number following flag and produces password with that length\n"
             "   -numbersAndLetters / -nl : only outputs a password containing numbers and letters\n"
